@@ -12,6 +12,17 @@ You can find the **issue tracker** at:
 
 <!-- TOWNCRIER -->
 
+## 0.2.0 (2020-04-26)
+
+### Changes
+
+- Quote non-ASCII tokens, to make whitespace more visible.
+
+### Bugfixes
+
+- Add `--build` flag to publish command.
+
+
 ## 0.1.0 (2020-04-26)
 
 ### Features
