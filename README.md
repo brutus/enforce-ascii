@@ -2,7 +2,7 @@
 
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 
-**VERSION**: `0.1.0`
+**VERSION**: `0.2.0`
 
 A Python package to find files containing non-ASCII encoded characters. If you
 find any bugs, issues or anything, please use the [issue tracker][] on GitHub -
@@ -47,7 +47,7 @@ This can be used as a [pre-commit][] hook:
 
 ```yaml
 - repo: https://github.com/brutus/enforce-ascii
-  rev: v0.1.0
+  rev: v0.2.0
   hooks:
       - id: enforce-ascii
 ```

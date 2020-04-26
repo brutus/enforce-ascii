@@ -7,7 +7,7 @@ from enforce_ascii import __version__
 
 TEST_PATH = pathlib.Path(__file__).parent.resolve()
 BASE_PATH = TEST_PATH.parent
-EXPECTED_VERSION = "0.1.0"
+EXPECTED_VERSION = "0.2.0"
 
 
 @pytest.fixture
