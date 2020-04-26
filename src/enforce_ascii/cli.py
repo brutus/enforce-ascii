@@ -27,12 +27,9 @@ def run(*filenames, check=False):
     bad_encodings = get_non_ascii_files(*filenames)
 
     for filename, encoding in bad_encodings.items():
-        words = sorted(get_non_ascii_words(filename))
-        print(
-            "- {name} ({encoding}): {words}".format(
-                name=filename, encoding=encoding, words=", ".join(words),
-            )
-        )
+        words = get_non_ascii_words(filename)
+        words = ", ".join((f"'{w}'" for w in sorted(words)))
+        print(f"- {filename} ({encoding}): {words}")
 
     if bad_encodings and check:
         return 1
