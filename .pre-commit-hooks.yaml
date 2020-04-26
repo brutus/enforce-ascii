@@ -1,0 +1,6 @@
+- id: enforce-ascii
+  name: Enforce ASCII
+  description: Reject files with non-ASCII encoding.
+  entry: enforce-ascii --check
+  language: python_venv
+  types: [text]
