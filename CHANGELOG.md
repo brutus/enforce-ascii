@@ -11,3 +11,10 @@ You can find the **issue tracker** at:
 [semantic versioning]: https://semver.org/
 
 <!-- TOWNCRIER -->
+
+## 0.1.0 (2020-04-26)
+
+### Features
+
+- Add support for [pre-commit](https://pre-commit.com/) hook.
+- Initial `enforce-ascii` package on PyPi; with utility functions and command.
