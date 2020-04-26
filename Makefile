@@ -7,7 +7,7 @@ setup:
 
 .PHONY: lint
 lint:
-	poetry run pre-commit run -a
+	poetry run pre-commit run --all-files
 
 .PHONY: test tests
 test tests:
@@ -45,4 +45,4 @@ release:
 
 .PHONY: publish
 publish:
-	poetry publish
+	poetry publish --build
