@@ -45,3 +45,13 @@ dev = [
 	"pre-commit",
 	"towncrier",
 ]
+
+[tool.black]
+target-version = ["py27"]
+
+[tool.flakehell]
+max_line_length = 88
+exclude = [".nox/*"]
+
+[tool.flakehell.plugins]
+pyflakes = ["+*"]
