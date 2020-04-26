@@ -1,0 +1,47 @@
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry]
+name = "enforce-ascii"
+version = "0.0.0"
+description = "A pre-commit hook, that enforces ASCII content."
+authors = ["Brutus <brutus.dmc@googlemail.com>"]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+homepage = "https://github.com/brutus/enforce-ascii/"
+repository = "https://github.com/brutus/enforce-ascii/"
+
+# https://pypi.org/pypi?%3Aaction=list_classifiers
+classifiers = [
+	"Programming Language :: Python",
+	"Topic :: Software Development :: Libraries :: Python Modules",
+	"Development Status :: 4 - Beta",
+	"License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+]
+
+[tool.poetry.scripts]
+enforce-ascii = 'enforce_ascii.__main__:main'
+
+[tool.poetry.dependencies]
+python = ">=3.6.1"
+chardet = "^3.0.4"
+
+[tool.poetry.dev-dependencies]
+nox = "^2019.11.9"
+bump2version = "^1.0.0"
+pre-commit = "^2.3.0"
+towncrier = "^19.2.0"
+
+[tool.poetry.extras]
+test = [
+	"nox",
+]
+doc = [
+	"sphinx",
+]
+dev = [
+	"bump2version",
+	"pre-commit",
+	"towncrier",
+]
