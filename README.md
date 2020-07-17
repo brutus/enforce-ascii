@@ -10,7 +10,7 @@ issues and PRs are welcome ❤️
 
 ## Install
 
-It's on [PyPi] as `enforce-python`, you can install it with _pip_, _pipx_, etc.
+It's on [PyPi] as `enforce-ascii`, you can install it with _pip_, _pipx_, etc.
 
 ```shell
 pip install enforce-ascii
