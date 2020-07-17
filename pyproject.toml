@@ -37,9 +37,6 @@ towncrier = "^19.2.0"
 test = [
 	"nox",
 ]
-doc = [
-	"sphinx",
-]
 dev = [
 	"bump2version",
 	"pre-commit",
@@ -47,14 +44,7 @@ dev = [
 ]
 
 [tool.black]
-target-version = ["py27"]
-
-[tool.flakehell]
-max_line_length = 88
-exclude = [".nox/*"]
-
-[tool.flakehell.plugins]
-pyflakes = ["+*"]
+target-version = ["py36"]
 
 [tool.towncrier]
 directory = "changes"
