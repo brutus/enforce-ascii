@@ -12,6 +12,14 @@ You can find the **issue tracker** at:
 
 <!-- TOWNCRIER -->
 
+## 0.2.1 (2020-07-17)
+
+### Bugfixes
+
+- Fix test for error reporting: non-ASCII words are quoted.
+- Fix Python package name in README.
+
+
 ## 0.2.0 (2020-04-26)
 
 ### Changes
