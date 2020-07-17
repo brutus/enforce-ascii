@@ -5,7 +5,7 @@ is based on [Keep a Changelog][], and this project adheres to
 [Semantic Versioning][].
 
 You can find the **issue tracker** at:
-<https://github.com/brutus/require-ascii/issues>
+<https://github.com/brutus/enforce-ascii/issues>
 
 [keep a changelog]: https://keepachangelog.com/
 [semantic versioning]: https://semver.org/
