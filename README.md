@@ -37,8 +37,8 @@ optional arguments:
 
 ```shell
 $ enforce-ascii tests/files/*/*.txt
-- tests/files/bad/special.txt (Windows-1252): there…
-- tests/files/bad/umlaut.txt (utf-8): föur, käle, Åir
+- tests/files/bad/special.txt (Windows-1252): 'there…'
+- tests/files/bad/umlaut.txt (utf-8): 'föur', 'käle', 'Åir'
 ```
 
 ## Pre-Commit
