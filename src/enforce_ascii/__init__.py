@@ -3,7 +3,7 @@ A pre-commit hook, that rejects files containing non ASCII characters.
 
 """
 
-__version__ = "0.2.0"
+__version__ = "0.2.1"
 __description__ = __doc__.strip().split("\n\n")[0]
 
 
