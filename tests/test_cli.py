@@ -26,8 +26,8 @@ def test_files_output_bad(test_files_bad):
     cmd = ["enforce-ascii", *test_files_bad]
     exp = "\n".join(
         (
-            "- tests/files/bad/special.txt (Windows-1252): there…",
-            "- tests/files/bad/umlaut.txt (utf-8): föur, käle, Åir",
+            "- tests/files/bad/special.txt (Windows-1252): 'there…'",
+            "- tests/files/bad/umlaut.txt (utf-8): 'föur', 'käle', 'Åir'",
         )
     )
     res = subprocess.run(cmd, capture_output=True, text=True)
